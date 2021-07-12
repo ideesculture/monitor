@@ -38,7 +38,7 @@
     while ($donnees = $reponse->fetch()) {
       echo '<div id="' . "id" . $i . '" class="contenair"> <div class="block"> 
             <h2 id="' . "titleserver" . $i . '" class="titleServer">' . $donnees['name'] . '</h2> <div class="block_partie_1"><div id="' . "etat" . $i . '"class="etat_serveur"> 
-            </div><div id="' . "loadserver" . $i . '" class="title2">' . $monitoring['load'] . '</div></div>
+            </div><div id="' . "loadserver" . $i . '" class="title2"></div></div>
              <meter id="' . "charge" . $i . '"class="barre_charge" min="0" max="8" low="1.5" high="2.24" optimum="2.25" value="0"></meter>
              <p id="' . "freespace" . $i . '"class="title_free_space"></p><div class="freespace"></div>
              <meter id="' . "space" . $i . '"class="barre_space" min="0" max="0" low="0" high="0" optimum="0" value="0"></meter><div class="block_partie_1">
