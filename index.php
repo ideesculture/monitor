@@ -104,7 +104,7 @@
       $(document).ready(function() {
 
         $.get("url.json", function(data) {
-          $(data).each(function() {
+          $(data).each(function(index, url) {
             getdataserveur(url, index);
           });
 
