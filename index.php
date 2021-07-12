@@ -14,6 +14,9 @@
   <link rel="shortcut icon" type="image/png" href="Favicons.png" />
   <title>Supervision Serveur IdéesCulture</title>
 </head>
+<?php
+  require_once("settings.php");
+?>
 
 <body>
   <header>
@@ -24,7 +27,7 @@
     // Connexion a la base de donnée MySql via l'extention PDO
     // Les lignes suivantes permette de tester la connexion a la base donnée Myql
     try {
-      $bdd = new PDO('mysql:host=localhost;dbname=supervision_serveur;charset=utf8', 'eleve', 'bonjour');
+      $bdd = new PDO('mysql:host=localhost;dbname='.$db.';charset=utf8', $db_user, $db_pass);
     } catch (Exception $e) {
       die('Erreur : ' . $e->getMessage());
     }
