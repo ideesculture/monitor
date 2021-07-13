@@ -50,8 +50,6 @@
     ?>
     <script>
       function getdataserveur(url, index) {
-        console.log(url);
-        console.log(index);
         let $i = index;
         $.get(url, function(data) {
           /* Affichage de la charge du serveur */
@@ -113,7 +111,7 @@
             $(data).each(function(index, url) {
             getdataserveur(url, index);
           });
-          }, 3000);
+          }, 5000);
         });
       });
     </script>
