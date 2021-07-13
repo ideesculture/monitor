@@ -43,8 +43,6 @@
     ?>
     <script>
       function getdataserveur(url, index) {
-        console.log(url);
-        console.log(index);
         let $i = index;
         $.get(url, function(data) {
           /* Affichage de la charge du serveur */
