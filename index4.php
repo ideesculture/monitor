@@ -104,7 +104,7 @@
             $(data).each(function(index, url) {
               getdataserveur(url, index);
             });
-          }, 3000);
+          }, 5000);
         });
       });
     </script>
